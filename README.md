@@ -241,60 +241,6 @@ API Gateway
 
 Serverless functions
 
-Development Plan
-Phase 1 – Prototype
-
-Project idea documentation
-
-Basic UI design
-
-Simple premium calculation logic
-
-GitHub repository setup
-
-Phase 2 – Minimum Viable Product
-
-User authentication
-
-Policy purchase system
-
-Weekly premium calculator
-
-Claim submission module
-
-Phase 3 – Advanced Features
-
-AI-based fraud detection
-
-Risk prediction models
-
-Real-time premium adjustment
-
-Integration with insurance providers
-
-Repository Structure
-weekly-microinsurance
-│
-├── README.md
-├── frontend
-│   ├── mobile-app
-│   └── admin-dashboard
-│
-├── backend
-│   ├── api
-│   └── services
-│
-├── ml-models
-│
-└── docs
-2-Minute Video Plan
-
-The video will demonstrate:
-
-The problem with traditional insurance models
-
-The concept of weekly micro-insurance
-
 Application workflow and user scenarios
 
 AI-based premium calculation
