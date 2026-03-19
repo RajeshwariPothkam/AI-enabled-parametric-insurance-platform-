@@ -1,4 +1,6 @@
-#WeatherShield – AI-Powered Income Protection for Delivery Workers
+# PayGuard AI – Smart Income Protection for Gig Workers
+
+## Protecting Delivery Workers from Income Loss using AI-powered Parametric Insurance
 
 ## 💡 Inspiration  
 
