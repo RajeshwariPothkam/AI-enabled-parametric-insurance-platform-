@@ -1,4 +1,4 @@
-WeatherShield – AI-Powered Income Protection for Delivery Workers
+#WeatherShield – AI-Powered Income Protection for Delivery Workers
 
 # 1. Problem Statement
 
@@ -211,7 +211,7 @@ WeatherShield provides a **simple, automated, and reliable safety net** for deli
 By combining AI with parametric insurance, the platform ensures **financial protection against income loss** while maintaining strong fraud prevention mechanisms.
 
  GitHub Repository
-
+https://github.com/RajeshwariPothkam/AI-enabled-parametric-insurance-platform-?tab=readme-ov-file
 
  Demo Video
 https://youtu.be/HNv8NOT7uUs?feature=shared
