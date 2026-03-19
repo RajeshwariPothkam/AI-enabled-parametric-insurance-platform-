@@ -1,190 +1,105 @@
-Weekly Micro-Insurance Platform
-Overview
+WeatherShield – AI-Powered Income Protection for Delivery Workers
 
-The Weekly Micro-Insurance Platform is designed to provide flexible and affordable insurance coverage with weekly premium payments. Traditional insurance policies require long-term commitments and higher premiums, which are not suitable for people who need coverage only for a short period.
+# 1. Problem Statement
 
-This platform allows users to purchase short-term insurance policies that renew every week and adjust premiums dynamically based on risk factors. The system uses AI and Machine Learning to calculate premiums, detect fraudulent claims, and improve risk prediction.
+Delivery workers (Swiggy/Zomato partners) depend on daily earnings. External disruptions like heavy rain, extreme heat, pollution, or curfews can prevent them from working, leading to **loss of income**.
+Currently, there is **no insurance system** that protects gig workers from such income loss.
 
-Problem Statement
+# 2. Proposed Solution
 
-Many people today work in flexible environments such as gig economy jobs or temporary travel situations. Traditional insurance models do not serve them effectively because they require:
+WeatherShield is an **AI-powered parametric micro-insurance platform** that provides financial protection to delivery workers against income loss caused by external disruptions.
+The system automatically monitors real-world conditions and provides **instant payouts** when predefined conditions are met — without requiring manual claims.
 
-Long-term commitments
+# 3. Target Persona
 
-High upfront payments
+* Food Delivery Workers (Swiggy / Zomato)
+* Workers dependent on daily delivery-based income
+* Operate in outdoor environments affected by weather and external factors
 
-Limited flexibility
+# 4. System Workflow
 
-Examples of such users include:
+1. User registers on the mobile application
+2. User selects a weekly income protection plan
+3. AI evaluates location-based risk and calculates premium
+4. System continuously monitors external data (weather, pollution, etc.)
+5. If disruption occurs (e.g., heavy rain), system triggers claim automatically
+6. Fraud detection layer verifies authenticity
+7. Instant payout is credited to the worker
 
-Delivery riders
+# 5. Weekly Premium Model
 
-Freelancers
+Premium is calculated weekly based on risk level:
 
-Travelers
+* Low Risk Area → ₹20/week
+* Medium Risk Area → ₹30/week
+* High Risk Area → ₹50/week
 
-Event participants
+ Premium Formula:
 
-Temporary workers
+Weekly Premium = Base Premium + Location Risk + Weather Risk − Safety Score
 
-The proposed solution offers weekly insurance coverage that is affordable, flexible, and dynamically priced.
+AI determines risk using:
 
-Persona-Based Scenarios
-Persona 1: Delivery Rider
+* Historical weather data
+* Area-specific disruption patterns
+* User behavior
 
-Name: Ravi
-Age: 25
-Occupation: Food Delivery Rider
+# 6. Parametric Triggers (Income Loss Events)
 
-Scenario
+Payouts are triggered automatically when:
 
-Ravi works part-time and wants insurance coverage only for the weeks he is actively working.
+* Rainfall exceeds threshold
+* Temperature exceeds 40°C
+* AQI crosses hazardous level
+* Curfew or area restriction occurs
 
-Workflow
+ No manual claim process required
 
-Ravi installs the mobile application.
+# 7. AI / ML Integration
 
-Registers and creates a user profile.
+7.1 Risk Assessment & Dynamic Pricing
 
-Selects Weekly Accident Insurance.
+AI models calculate risk score using:
 
-The system evaluates risk factors such as location and working hours.
+* Location data
+* Weather patterns
+* Historical disruptions
+* User activity
 
-A weekly premium is calculated.
+ 7.2 Fraud Detection
 
-Ravi pays the premium and gets coverage for 7 days.
+AI detects fraud using:
 
-Persona 2: Traveler
+* Behavioral pattern analysis
+* Location verification (GPS + network data)
+* Duplicate claim detection
+* Weather-data correlation
 
-Name: Priya
-Age: 30
+ 7.3 Predictive Risk Modeling
 
-Scenario
+System predicts future risks using:
 
-Priya is planning a 7-day trip and wants temporary travel insurance.
+* Weather forecasts
+* Environmental data
+* Historical disruption patterns
 
-Workflow
+# 8. Platform Choice
 
-Priya selects Travel Micro Insurance.
+ Mobile Application
 
-Enters travel details and destination.
+* Easy weekly subscription
+* Real-time monitoring
+* Push notifications
 
-The system calculates the premium based on travel risk.
+ Admin Dashboard
 
-Insurance coverage activates for the travel period.
+* Monitor claims
+* Analyze fraud patterns
+* View risk analytics
 
-Persona 3: Adventure Activity Participant
+# 9. System Architecture
 
-Name: Arjun
-
-Scenario
-
-Arjun participates in a trekking event and needs short-term coverage.
-
-Workflow
-
-User selects Adventure Activity Insurance.
-
-System calculates premium based on activity risk.
-
-Coverage is provided for the selected week.
-
-Weekly Premium Model
-
-The system calculates insurance premiums dynamically every week.
-
-Premium Calculation Formula
-
-Weekly Premium =
-Base Premium + Risk Adjustment + Activity Adjustment + Location Risk
-
-Example
-
-Base Premium = ₹50
-High Risk Location = +₹10
-Safe Behavior Discount = −₹5
-
-Final Weekly Premium = ₹55
-
-This approach ensures that users pay fair premiums based on actual risk levels.
-
-Parametric Triggers
-
-Premium values are updated automatically based on predefined triggers.
-
-Trigger	Description
-Location Risk	High accident zones increase premium
-Activity Level	Increased usage raises risk
-Weather Conditions	Severe weather increases risk
-Claim History	Previous claims increase premium
-Behavior Score	Safe behavior reduces premium
-
-These triggers allow the system to dynamically adjust premiums every week.
-
-Platform Choice
-Mobile Application
-
-The primary platform is a mobile application because:
-
-Users can easily purchase and renew weekly policies.
-
-GPS data can be used for location-based risk assessment.
-
-Claims can be submitted using photos directly from the phone.
-
-Push notifications can remind users to renew policies.
-
-An Admin Web Dashboard will also be developed for insurance providers to monitor policies and claims.
-
-AI / ML Integration
-
-Artificial Intelligence is integrated into the system to improve decision-making and automation.
-
-Premium Calculation
-
-Machine learning models analyze various inputs:
-
-Location risk
-
-User behavior
-
-Activity level
-
-Weather conditions
-
-Claim history
-
-These factors generate a risk score, which adjusts the weekly premium.
-
-Fraud Detection
-
-AI models help identify suspicious insurance claims using:
-
-Claim pattern analysis
-
-Duplicate claim detection
-
-Image verification for uploaded evidence
-
-Behavioral anomaly detection
-
-Suspicious claims are flagged for manual review.
-
-Risk Prediction
-
-Predictive models analyze historical data and external factors such as:
-
-Traffic accident statistics
-
-Weather forecasts
-
-Location risk patterns
-
-This helps the system anticipate risk and adjust premiums accordingly.
-
-System Architecture
-
-User Mobile App
+User App
 ↓
 API Gateway
 ↓
@@ -196,63 +111,107 @@ Database
 ↓
 Admin Dashboard
 
-Tech Stack
-Frontend
+# 10. Tech Stack
 
-Mobile App
+ Frontend
 
-Flutter or React Native
+* Flutter / React Native
+* React.js (Admin Dashboard)
 
-Admin Dashboard
+ Backend
 
-React.js
+* Node.js / Express.js / FastAPI
 
-Tailwind CSS
+ Database
 
-Backend
-
-Node.js
-
-Express.js or FastAPI
-
-Database
-
-PostgreSQL (policy data)
-
-MongoDB (logs and analytics)
+* PostgreSQL
+* MongoDB
 
 AI / ML
 
-Python
+* Python
+* Scikit-learn / TensorFlow
 
-Scikit-learn
+APIs
 
-TensorFlow
+* Weather API
+* Location API
 
-Cloud Infrastructure
+ Cloud
 
-AWS or Google Cloud Platform
+* AWS / Google Cloud
 
-Services used:
+# 11. Key Features
 
-Cloud Storage
+* Weekly subscription model
+* Automated claim triggering
+* Instant payout system
+* AI-based risk calculation
+* Advanced fraud detection and anti-spoofing protection
 
-API Gateway
+# 12.  Adversarial Defense & Anti-Spoofing Strategy (Market Crash)
+ Fraud Scenario
 
-Serverless functions
+A coordinated fraud attack where multiple fake users use GPS spoofing to trigger false claims and drain system funds.
 
-Application workflow and user scenarios
+ Defense Mechanisms
 
-AI-based premium calculation
+ 1. Multi-Source Location Verification
 
-Future development roadmap
+* GPS + IP + device sensor validation
+* Detect mismatched locations
 
-Future Enhancements
+ 2. Movement Pattern Analysis
 
-Integration with IoT devices
+* Real users → continuous movement
+* Fake users → abnormal jumps
+* AI flags anomalies
 
-Blockchain-based claim verification
+ 3. Weather Correlation Check
 
-Real-time telematics data analysis
+* Validate claims against real weather data
+* Reject invalid claims
 
-Partnerships with insurance companies
+ 4. Behavioral Analytics
+
+* Detect mass claim patterns
+* Identify fraud rings
+
+5. Device Fingerprinting
+
+* Track device ID
+* Prevent multiple fake accounts
+
+6. Risk Scoring System
+
+* Assign fraud risk score
+* High-risk users → delayed/manual verification
+
+ 7. Fairness Protection
+
+* Genuine users not penalized
+* Only suspicious cases flagged
+
+Outcome
+
+* Prevents large-scale fraud attacks
+* Ensures system stability
+* Protects genuine workers
+
+# 13. Future Enhancements
+
+* Integration with delivery platforms
+* Personalized insurance plans
+* Advanced AI prediction models
+* Real-time disruption alerts
+
+# 14. Conclusion
+
+WeatherShield provides a **simple, automated, and reliable safety net** for delivery workers.
+By combining AI with parametric insurance, the platform ensures **financial protection against income loss** while maintaining strong fraud prevention mechanisms.
+
+ GitHub Repository
+
+
+ Demo Video
+https://youtu.be/HNv8NOT7uUs?feature=shared
