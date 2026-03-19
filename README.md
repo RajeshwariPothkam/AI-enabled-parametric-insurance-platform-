@@ -1,9 +1,15 @@
 #WeatherShield – AI-Powered Income Protection for Delivery Workers
 
-# 1. Problem Statement
+## 💡 Inspiration  
 
-Delivery workers (Swiggy/Zomato partners) depend on daily earnings. External disruptions like heavy rain, extreme heat, pollution, or curfews can prevent them from working, leading to **loss of income**.
-Currently, there is **no insurance system** that protects gig workers from such income loss.
+India’s delivery partners (Swiggy, Zomato, etc.) are the backbone of the digital economy. However, their income is highly unstable due to external disruptions like heavy rain, extreme heat, pollution, and sudden curfews. These disruptions can reduce their earnings by up to **20–30% monthly**.
+
+Delivery workers are one of the most affected groups when there is a sudden change in weather. Due to unexpected conditions like heavy rain or extreme heat, they may not be able to work and can lose their entire income for that day.
+
+At the same time, they still need to cover daily expenses such as fuel and vehicle maintenance. Since they depend on daily wages, even a single missed day can create financial stress.
+
+A delivery worker earning ₹500/day can lose their entire income during such events. Despite this, there is **no effective financial safety net** to protect them.
+ This inspired us to build PayGuard AI — a platform that ensures workers continue earning even when they cannot work.
 
 # 2. Proposed Solution
 
