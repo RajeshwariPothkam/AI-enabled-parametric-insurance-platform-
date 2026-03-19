@@ -12,7 +12,7 @@ At the same time, they still need to cover daily expenses such as fuel and vehic
 
 A delivery worker earning ₹500/day can lose their entire income during such events. Despite this, there is **no effective financial safety net** to protect them.
  This inspired us to build PayGuard AI — a platform that ensures workers continue earning even when they cannot work.
-
+This inspired us to build PayGuard AI — a platform that ensures workers continue earning even when they cannot work
 # 2. Proposed Solution
 
 WeatherShield is an **AI-powered parametric micro-insurance platform** that provides financial protection to delivery workers against income loss caused by external disruptions.
