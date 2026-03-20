@@ -23,10 +23,13 @@ The system continuously monitors real-world conditions and automatically provide
 
 ## 👤 Target Persona  
 
-- Food Delivery Workers (Swiggy / Zomato)  
-- Workers dependent on daily delivery-based income  
-- Outdoor workers affected by weather and environmental disruptions  
+PayGuard AI is designed for gig workers who rely on daily or weekly earnings, with an initial focus on delivery partners.
 
+- Gig workers dependent on daily/weekly income  
+- Delivery partners (Swiggy, Zomato, Rapido, etc.)  
+- Workers operating in outdoor environments affected by weather and external disruptions  
+
+👉 The platform is initially focused on delivery workers and can be expanded to other gig sectors in the future.
 ---
 
 ## 🔄 System Workflow  
