@@ -2,7 +2,7 @@
 
 ### Protecting Delivery Workers from Income Loss using AI-powered Parametric Insurance
 
-## 💡 Inspiration  
+##  Inspiration  
 
 India’s delivery partners (Swiggy, Zomato, etc.) are the backbone of the digital economy. However, their income is highly unstable due to external disruptions like heavy rain, extreme heat, pollution, and sudden curfews. These disruptions can reduce their earnings by up to **20–30% monthly**.
 
@@ -13,7 +13,7 @@ At the same time, they still need to cover daily expenses such as fuel and vehic
 A delivery worker earning ₹500/day can lose their entire income during such events. Despite this, there is **no effective financial safety net** to protect them.
  This inspired us to build PayGuard AI — a platform that ensures workers continue earning even when they cannot work.
 
-## 💡 Proposed Solution  
+##  Proposed Solution  
 
 PayGuard AI is an **AI-powered parametric micro-insurance platform** that provides financial protection to delivery workers against income loss caused by external disruptions.
 
@@ -29,10 +29,10 @@ PayGuard AI is designed for gig workers who rely on daily or weekly earnings, wi
 - Delivery partners (Swiggy, Zomato, Rapido, etc.)  
 - Workers operating in outdoor environments affected by weather and external disruptions  
 
-👉 The platform is initially focused on delivery workers and can be expanded to other gig sectors in the future.
+ The platform is initially focused on delivery workers and can be expanded to other gig sectors in the future.
 ---
 
-## 🔄 System Workflow  
+##  System Workflow  
 
 User → AI Risk Analysis → Weekly Premium → Real-time Monitoring → Trigger Detection → Fraud Verification → Instant Payout  
 
@@ -48,7 +48,7 @@ User → AI Risk Analysis → Weekly Premium → Real-time Monitoring → Trigge
 
 ---
 
-## 💰 Weekly Premium Model  
+##  Weekly Premium Model  
 
 Premium is calculated weekly based on risk level:
 
@@ -66,17 +66,19 @@ Weekly Premium = Base Premium + Location Risk + Weather Risk − Safety Score
 
 ---
 
-## ⚡ Parametric Triggers (Income Loss Events)  
+##  Parametric Triggers (Income Loss Events)  
 
 Payouts are triggered automatically when:
 
-- Rainfall exceeds threshold  
-- Temperature exceeds 40°C  
-- AQI crosses hazardous levels  
-- Curfew or area restrictions occur  
+- Heavy rainfall exceeds predefined threshold  
+- Official weather alerts (Red/Orange alerts) are issued  
+- Severe weather conditions disrupt normal operations  
+- Air Quality Index (AQI) reaches hazardous levels  
+- Government-imposed curfews or area restrictions occur  
 
-👉 No manual claim process required  
+ Triggers are based on *high-impact disruption events*, not normal environmental conditions  
 
+ No manual claim process required — fully automated system
 ---
 
 ## 🤖 AI / ML Integration  
@@ -148,7 +150,7 @@ Cloud:
 
 ---
 
-## 🏆 Key Features  
+##  Key Features  
 
 - Weekly subscription model  
 - Automated claim triggering  
@@ -158,7 +160,7 @@ Cloud:
 
 ---
 
-# 🚨 Adversarial Defense & Anti-Spoofing Strategy  
+#  Adversarial Defense & Anti-Spoofing Strategy  
 
 ### 1. Differentiation (Real vs Fake Users)  
 - Real users → continuous movement patterns  
@@ -184,7 +186,7 @@ Cloud:
 
 ---
 
-## 🔮 Future Enhancements  
+##  Future Enhancements  
 
 - Integration with delivery platforms  
 - Personalized insurance plans  
