@@ -19,6 +19,7 @@ PayGuard AI is an **AI-powered parametric micro-insurance platform** that provid
 
 The system continuously monitors real-world conditions and automatically provides payouts when predefined conditions are met — eliminating the need for manual claims.
 
+The platform strictly focuses on income protection and does not include health, accident, or vehicle insurance
 ---
 
 ## 👤 Target Persona  
