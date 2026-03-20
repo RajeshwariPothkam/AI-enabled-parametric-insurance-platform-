@@ -22,7 +22,7 @@ The system continuously monitors real-world conditions and automatically provide
 The platform strictly focuses on income protection and does not include health, accident, or vehicle insurance
 ---
 
-## 👤 Target Persona  
+##  Target Persona  
 
 PayGuard AI is designed for gig workers who rely on daily or weekly earnings, with an initial focus on delivery partners.
 
@@ -82,7 +82,7 @@ Payouts are triggered automatically when:
  No manual claim process required — fully automated system
 ---
 
-## 🤖 AI / ML Integration  
+##  AI / ML Integration  
 
 ### 1. Risk Assessment & Dynamic Pricing  
 AI models calculate risk score using:
@@ -106,27 +106,27 @@ System predicts future risks using:
 
 ---
 
-## 🏗️ Platform Choice  
+##  Platform Choice  
 
-### 📱 Mobile Application  
+###  Mobile Application  
 - Easy weekly subscription  
 - Real-time monitoring  
 - Push notifications  
 
-### 📊 Admin Dashboard  
+###  Admin Dashboard  
 - Monitor claims  
 - Analyze fraud patterns  
 - View risk analytics  
 
 ---
 
-## 🛠️ System Architecture  
+##  System Architecture  
 
 User App → API Gateway → Backend Server → AI/ML Risk Engine → Database → Admin Dashboard  
 
 ---
 
-## 🧩 Tech Stack  
+##  Tech Stack  
 
 Frontend:
 - Flutter / React Native  
@@ -196,7 +196,7 @@ Cloud:
 
 ---
 
-## 🏁 Conclusion  
+##  Conclusion  
 
 PayGuard AI provides a simple, automated, and reliable safety net for delivery workers. By combining AI with parametric insurance, the platform ensures financial protection against income loss while maintaining strong fraud prevention mechanisms.
 
