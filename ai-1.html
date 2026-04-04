@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PayGuard AI</title>
+  <meta charset="UTF-8" />
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #eef2f7;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      margin-top: 80px;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    input, select, button {
+      padding: 10px;
+      margin: 8px;
+      width: 85%;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    .tag {
+      color: green;
+      font-size: 14px;
+    }
+
+    .logout {
+      background: red;
+      margin-bottom: 10px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    /* NEW: Login styling */
+    #loginPage h1 {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- LOGIN PAGE -->
+<div class="container" id="loginPage">
+  <h1>Welcome to PayGuard AI</h1>
+  <h3>Login to Continue</h3>
+
+  <input type="text" id="username" placeholder="Username" />
+  <input type="password" id="password" placeholder="Password" />
+
+  <button onclick="login()">Login</button>
+
+  <!-- BOLD DEMO -->
+  <p style="margin-top:15px;">
+    <b>Demo Credentials:</b><br>
+    <b>Username:</b> user <br>
+    <b>Password:</b> 1234
+  </p>
+</div>
+
+<!-- APP PAGE -->
+<div class="container hidden" id="appPage">
+
+  <button class="logout" onclick="logout()">Logout</button>
+
+  <h2>PayGuard AI</h2>
+  <p class="tag">Guidewire ClaimCenter Integration (Simulation)</p>
+
+  <!-- USER PROFILE -->
+  <h3>Worker Profile</h3>
+
+  <input type="number" id="income" placeholder="Daily Income (₹)" />
+
+  <select id="proof">
+    <option value="app">App Earnings Screenshot</option>
+    <option value="bank">Bank Statement</option>
+    <option value="self">Self Declaration</option>
+  </select>
+
+  <select id="job">
+    <option value="delivery">Delivery Partner</option>
+    <option value="driver">Ride Driver</option>
+  </select>
+
+  <!-- PLAN -->
+  <h3>Select Plan</h3>
+  <select id="plan">
+    <option value="20">Basic (₹20/week)</option>
+    <option value="40">Standard (₹40/week)</option>
+    <option value="60">Premium (₹60/week)</option>
+  </select>
+
+  <button onclick="calculate()">Analyze Risk</button>
+
+  <div id="analysis" class="result"></div>
+
+  <!-- SCENARIO -->
+  <h3>Simulate Disruption</h3>
+  <select id="scenario">
+    <option value="rain">Heavy Rain</option>
+    <option value="flood">Flood</option>
+    <option value="roadblock">Road Block</option>
+    <option value="appdown">Platform Server Down</option>
+  </select>
+
+  <button onclick="claim()">Submit Claim</button>
+
+  <div id="result" class="result"></div>
+
+</div>
+
+<script>
+
+// LOGIN
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+
+  if (user === "user" && pass === "1234") {
+    localStorage.setItem("loggedIn", "true");
+
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("appPage").classList.remove("hidden");
+  } else {
+    alert("Invalid credentials");
+  }
+}
+
+// LOGOUT
+function logout() {
+  localStorage.removeItem("loggedIn");
+
+  document.getElementById("loginPage").classList.remove("hidden");
+  document.getElementById("appPage").classList.add("hidden");
+}
+
+// AUTO LOGIN
+window.onload = function() {
+  if (localStorage.getItem("loggedIn") === "true") {
+    document.getElementById("loginPage").classList.add("hidden");
+    document.getElementById("appPage").classList.remove("hidden");
+  }
+};
+
+// RISK CALCULATION
+function calculate() {
+  let income = parseInt(document.getElementById("income").value);
+  let job = document.getElementById("job").value;
+  let plan = parseInt(document.getElementById("plan").value);
+  let proof = document.getElementById("proof").value;
+
+  if (!income || income <= 0) {
+    alert("Enter valid income");
+    return;
+  }
+
+  if (income > 5000) {
+    alert("Income too high for gig worker profile. Please verify.");
+    return;
+  }
+
+  let risk = 0;
+
+  if (job === "delivery") risk += 40;
+  else if (job === "driver") risk += 35;
+
+  if (income < 500) risk += 30;
+  else if (income < 1000) risk += 20;
+  else risk += 10;
+
+  let coverage = income * 2;
+
+  let verificationMsg = "";
+
+  if (proof === "self") {
+    verificationMsg = "⚠️ Low trust input – manual verification needed";
+  } else {
+    verificationMsg = "✅ Income verified (simulated)";
+  }
+
+  document.getElementById("analysis").innerHTML =
+    "AI Risk Score: " + risk +
+    "<br>Weekly Premium: ₹" + plan +
+    "<br>Coverage Amount: ₹" + coverage +
+    "<br>" + verificationMsg;
+}
+
+// CLAIM
+function claim() {
+  let scenario = document.getElementById("scenario").value;
+  let income = parseInt(document.getElementById("income").value);
+  let result = document.getElementById("result");
+
+  if (!income || income <= 0) {
+    alert("Enter income first");
+    return;
+  }
+
+  result.innerHTML = "⏳ Processing via Guidewire...";
+  result.style.color = "black";
+
+  setTimeout(() => {
+
+    let approved = false;
+    let reason = "";
+
+    if (scenario === "rain" || scenario === "flood") {
+      approved = true;
+      reason = "Weather disruption verified";
+    }
+
+    else if (scenario === "roadblock") {
+      approved = Math.random() > 0.2;
+      reason = approved ? "Traffic restriction confirmed" : "Verification failed";
+    }
+
+    else if (scenario === "appdown") {
+      approved = true;
+      reason = "Platform outage detected";
+    }
+
+    if (approved) {
+      let payout = Math.round(income * 1.5);
+
+      result.innerHTML =
+        "✅ Claim Approved<br>" +
+        "Reason: " + reason + "<br>" +
+        "Payout: ₹" + payout + "<br>" +
+        "Processed via Guidewire ClaimCenter";
+
+      result.style.color = "green";
+    } else {
+      result.innerHTML =
+        "❌ Claim Rejected<br>" +
+        "Reason: " + reason;
+
+      result.style.color = "red";
+    }
+
+  }, 1500);
+}
+
+</script>
+
+</body>
+</html>
