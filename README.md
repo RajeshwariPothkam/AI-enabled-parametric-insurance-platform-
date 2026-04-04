@@ -40,16 +40,16 @@ The system continuously monitors real-world conditions and automatically provide
 
 ## 🔄 System Workflow  
 
-`User → AI Risk Analysis → Weekly Premium → Real-time Monitoring → Trigger Detection → Fraud Verification → Instant Payout`
+`User → AI Risk Scoring → Premium Calculation → Coverage Assignment → Monitoring → Claim Decision → Payout/Fraud Detection`
 
 ### Step-by-step:
 1. User registers on the mobile application  
 2. Selects a weekly income protection plan  
-3. AI evaluates location-based risk and calculates premium  
-4. System continuously monitors external data (weather, pollution, etc.)  
-5. If disruption occurs, claim is automatically triggered  
-6. Fraud detection layer verifies authenticity  
-7. Instant payout is credited  
+3. AI calculates risk score and premium  
+4. System continuously monitors external data  
+5. Disruption event is detected  
+6. Fraud detection validates claim  
+7. Payout is triggered  
 
 ---
 
@@ -62,20 +62,31 @@ The system continuously monitors real-world conditions and automatically provide
 ### Formula:
 `Weekly Premium = Base Premium + Location Risk + Weather Risk − Safety Score`
 
-### AI Factors:
-- Historical weather data  
-- Area-specific disruption patterns  
-- User behavior  
+---
+
+## 🧠 AI Risk Model  
+
+The system uses a weighted risk scoring model:
+
+Risk Score = (0.5 × Weather Risk) + (0.3 × Location Risk) + (0.2 × User Behavior)
+
+- Weather Risk → rainfall, temperature, AQI  
+- Location Risk → area vulnerability  
+- User Behavior → historical activity  
+
+Based on risk score:
+- Low Risk → ₹20  
+- Medium Risk → ₹30  
+- High Risk → ₹50  
 
 ---
 
 ## ⚡ Parametric Triggers  
 
 - Heavy rainfall exceeds threshold  
-- Official weather alerts issued  
-- Severe weather disrupts work  
+- Weather alerts issued  
 - AQI reaches hazardous levels  
-- Government restrictions occur  
+- Government restrictions  
 
 👉 Fully automated — no manual claims  
 
@@ -87,36 +98,41 @@ The system continuously monitors real-world conditions and automatically provide
 - Location data  
 - Weather patterns  
 - Historical disruptions  
-- User activity  
 
 ### Fraud Detection
 - Behavioral analysis  
 - GPS + network validation  
 - Duplicate claim detection  
-- Weather correlation  
 
 ### Predictive Modeling
-- Weather forecasts  
-- Environmental data  
-- Historical trends  
+- Forecast-based risk prediction  
 
 ---
 
-## 🏗️ Platform  
+## 🛡️ Adversarial Defense & Anti-Spoofing Strategy  
 
-### 📱 Mobile App
-- Weekly subscription  
-- Real-time monitoring  
-- Notifications  
-
-### 📊 Admin Dashboard
-- Claims monitoring  
-- Fraud analytics  
-- Risk insights  
+- Movement pattern analysis  
+- Multi-source verification (GPS + IP + device)  
+- Fraud ring detection  
+- Trust scoring system  
 
 ---
 
-## 🛠️ Architecture  
+## 💰 Financial Viability Model  
+
+The system ensures sustainability using probabilistic modeling.
+
+Example:
+- 100 users pay ₹30 → ₹3000  
+- 20 claims × ₹100 → ₹2000  
+
+👉 Net surplus = ₹1000  
+
+This ensures long-term financial stability.
+
+---
+
+## 🏗️ Architecture  
 
 `User App → API Gateway → Backend → AI Engine → Database → Dashboard`
 
@@ -124,12 +140,11 @@ The system continuously monitors real-world conditions and automatically provide
 
 ## 🧩 Tech Stack  
 
-**Frontend:** Flutter / React Native, React.js  
-**Backend:** Node.js / FastAPI  
-**Database:** PostgreSQL / MongoDB  
-**AI:** Python, Scikit-learn  
-**APIs:** Weather, Location  
-**Cloud:** AWS / GCP  
+Frontend: Flutter / React Native  
+Backend: Node.js / FastAPI  
+Database: PostgreSQL / MongoDB  
+AI: Python, Scikit-learn  
+Cloud: AWS / GCP  
 
 ---
 
@@ -137,61 +152,42 @@ The system continuously monitors real-world conditions and automatically provide
 
 - Weekly subscription model  
 - Automated claims  
-- Instant payouts  
 - AI-based pricing  
-- Anti-spoofing fraud detection  
+- Fraud detection  
 
 ---
 
-## 🚨 Adversarial Defense & Anti-Spoofing Strategy  
+## 🛡️ Insurance Constraints & Compliance  
 
-### 1. Differentiation  
-- Real users → continuous movement  
-- Fake users → abnormal jumps  
+- Claims only during verified events  
+- No payout for normal conditions  
+- Weekly payout caps  
+- Fraud users blocked  
 
-### 2. Data Used  
-- GPS + IP  
-- Device sensors  
-- Network patterns  
-- Route validation  
-- Group behavior  
-
-### 3. UX Balance  
-- Suspicious claims flagged  
-- No immediate rejection  
-- Fair treatment ensured  
-
-### Final Strategy  
-- Trust score system  
-- High-risk → verification  
-- Low-risk → instant payout  
-
----
-
-## 🔮 Future Enhancements  
-
-- Platform integrations  
-- Personalized plans  
-- Advanced AI models  
-- Real-time alerts  
+👉 Follows parametric insurance principles  
 
 ---
 
 ## 📊 Example Scenario  
 
-A delivery worker earning ₹500/day is unable to work due to heavy rainfall.
+A delivery worker earning ₹500/day cannot work due to heavy rain:
 
-- Without PayGuard AI → Income = ₹0  
-- With PayGuard AI → Automatic payout triggered  
-
-👉 Result: Financial stability even during disruptions
+- Without PayGuard AI → ₹0  
+- With PayGuard AI → ₹300 payout  
 
 ---
+
+## 🔮 Future Enhancements  
+
+- Platform integration  
+- Real-time payouts  
+- Advanced AI models  
+
+---
+
 ## 🏁 Conclusion  
 
-PayGuard AI provides a simple, automated, and reliable income protection system for gig workers, ensuring financial stability while preventing fraud.
-
-👉 The platform strictly focuses on **income protection** and does not include health, accident, or vehicle insurance.
+PayGuard AI provides a scalable, automated, and reliable income protection system for gig workers while ensuring fraud prevention and financial sustainability.
 
 ---
 
