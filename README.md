@@ -42,15 +42,6 @@ The system continuously monitors real-world conditions and automatically provide
 
 `User → AI Risk Scoring → Premium Calculation → Coverage Assignment → Monitoring → Claim Decision → Payout/Fraud Detection`
 
-### Step-by-step:
-1. User registers on the mobile application  
-2. Selects a weekly income protection plan  
-3. AI calculates risk score and premium  
-4. System continuously monitors external data  
-5. Disruption event is detected  
-6. Fraud detection validates claim  
-7. Payout is triggered  
-
 ---
 
 ## 💰 Weekly Premium Model  
@@ -59,14 +50,9 @@ The system continuously monitors real-world conditions and automatically provide
 - Medium Risk Area → ₹30/week  
 - High Risk Area → ₹50/week  
 
-### Formula:
-`Weekly Premium = Base Premium + Location Risk + Weather Risk − Safety Score`
-
 ---
 
 ## 🧠 AI Risk Model  
-
-The system uses a weighted risk scoring model:
 
 Risk Score = (0.5 × Weather Risk) + (0.3 × Location Risk) + (0.2 × User Behavior)
 
@@ -74,10 +60,18 @@ Risk Score = (0.5 × Weather Risk) + (0.3 × Location Risk) + (0.2 × User Behav
 - Location Risk → area vulnerability  
 - User Behavior → historical activity  
 
-Based on risk score:
-- Low Risk → ₹20  
-- Medium Risk → ₹30  
-- High Risk → ₹50  
+👉 This weighted model ensures realistic and adaptive premium pricing.
+
+---
+
+## 🤖 AI Justification  
+
+The system uses data-driven risk modeling approaches such as classification-based risk scoring and time-series forecasting for environmental conditions.
+
+Data sources include:
+- Weather APIs  
+- AQI monitoring systems  
+- Government alerts  
 
 ---
 
@@ -92,23 +86,6 @@ Based on risk score:
 
 ---
 
-## 🤖 AI / ML Integration  
-
-### Risk Assessment
-- Location data  
-- Weather patterns  
-- Historical disruptions  
-
-### Fraud Detection
-- Behavioral analysis  
-- GPS + network validation  
-- Duplicate claim detection  
-
-### Predictive Modeling
-- Forecast-based risk prediction  
-
----
-
 ## 🛡️ Adversarial Defense & Anti-Spoofing Strategy  
 
 - Movement pattern analysis  
@@ -116,19 +93,24 @@ Based on risk score:
 - Fraud ring detection  
 - Trust scoring system  
 
+👉 This multi-layered approach prevents large-scale fraud attacks while protecting genuine users.
+
 ---
 
 ## 💰 Financial Viability Model  
 
-The system ensures sustainability using probabilistic modeling.
+The system follows actuarial principles using risk pooling.
+
+- Expected claim probability: ~15–25%  
+- Premiums exceed expected payouts  
 
 Example:
-- 100 users pay ₹30 → ₹3000  
-- 20 claims × ₹100 → ₹2000  
+- 100 users × ₹30 = ₹3000  
+- 20 claims × ₹100 = ₹2000  
 
 👉 Net surplus = ₹1000  
 
-This ensures long-term financial stability.
+Dynamic premium adjustment ensures sustainability.
 
 ---
 
@@ -138,22 +120,24 @@ This ensures long-term financial stability.
 
 ---
 
-## 🧩 Tech Stack  
+## 🔗 Industry Integration (Guidewire Alignment)  
 
-Frontend: Flutter / React Native  
-Backend: Node.js / FastAPI  
-Database: PostgreSQL / MongoDB  
-AI: Python, Scikit-learn  
-Cloud: AWS / GCP  
+PayGuard AI can integrate with enterprise insurance platforms such as Guidewire ClaimCenter and PolicyCenter.
+
+- ClaimCenter → automated claim execution  
+- PolicyCenter → policy configuration  
 
 ---
 
-## 🏆 Key Features  
+## ⚖️ Traditional Insurance vs PayGuard AI  
 
-- Weekly subscription model  
-- Automated claims  
-- AI-based pricing  
-- Fraud detection  
+| Feature | Traditional Insurance | PayGuard AI |
+|--------|---------------------|-------------|
+| Claim Process | Manual | Automatic |
+| Processing Time | Days/Weeks | Instant |
+| Documentation | Required | Not required |
+| Claim Trigger | User-based | Event-based |
+| Complexity | High | Simple |
 
 ---
 
